@@ -1,10 +1,7 @@
-apiVersion: kustomize.config.kustomize.io/v1beta1
-kind: Kustomization
-
 bases:
 - ../../base
 
-patches:
+patchesStrategicMerge:
  - replicas.yaml
 
 configMapGenerator:
